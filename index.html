@@ -1,1 +1,351 @@
-<h1>Github Pages Test</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="title">PETNOVA - Pet Care Management</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        <button id="lang-en" class="lang-btn active">EN</button>
+        <button id="lang-es" class="lang-btn">ES</button>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="./img/Logo.png" alt="PETNOVA Logo" width="200"> 
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#" data-i18n="nav.home">Home</a></li>
+                    <li><a href="#why-us" data-i18n="nav.why">Why choose us?</a></li>
+                    <li><a href="#features" data-i18n="nav.features">Features</a></li>
+                    <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
+                    <li><a href="#contact" data-i18n="nav.contact">Contact us</a></li>
+                    <li><a href="#" class="btn-outline" data-i18n="nav.signin">Sign in</a></li>
+                    <li class="signup-container">
+                        <a href="#" class="btn" data-i18n="nav.signup">Sign up</a>
+                    </li>
+                </ul>
+                <div class="hamburger">☰</div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Manage your pets'<br>care simply and<br>efficiently.</h1>
+                    <p>Keep track of medical records, vaccinations, and vet<br>appointments in one place.</p>
+                    <div class="hero-features">
+                        <div class="feature">
+                            <img src="./img/pata 1.png" alt="Pet Health">
+                            <span>Pet Health</span>
+                        </div>
+                        <div class="feature">
+                            <img src="./img/aguja-de-jeringa 1.png" alt="Vaccines">
+                            <span>Vaccines</span>
+                        </div>
+                        <div class="feature">
+                            <img src="./img/recordatorio 1.png" alt="Reminders">
+                            <span>Reminders</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn">Get Started</a>
+                </div>
+                <div class="hero-image">
+                    <img src="./img/vet-img1.png" alt="Veterinarian with dog" class="hero-main-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us" id="why-us">
+        <div class="container">
+            <div class="section-header">
+                
+                <h2>Why choose us?</h2>
+            </div>
+            
+            <div class="content-wrapper">
+                <div class="text-content">
+                    <p class="intro-text">At Pawfect Care, we understand that your patients' well-being and the efficiency of your work are top priorities. That's why we offer a reliable, intuitive platform designed to simplify every aspect of veterinary management.</p>
+                    
+                    <div class="benefits-grid">
+                        <div class="benefit-item">
+                            <div class="checkbox"></div>
+                            <p>Manage users, clients, products, services, and clinical records with ease.</p>
+                        </div>
+                        <div class="benefit-item checked">
+                            <div class="checkbox checked">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <p>Easily access medical records to improve pet care and follow-up.</p>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="checkbox"></div>
+                            <p>An intuitive interface designed for veterinarians and pet owners, with no advanced technical skills required.</p>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="checkbox"></div>
+                            <p>Optimiza tareas diarias y enfócate en lo que realmente importa: el bienestar de las mascotas.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="image-content">
+                    <img src="./img/peinado.png" alt="Veterinary team working" class="feature-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscriptions -->
+    <section class="subscriptions" id="features">
+        <div class="container">
+            <h2 class="section-title" data-i18n="subscriptions.title">Subscriptions</h2>
+            <p class="section-subtitle" data-i18n="subscriptions.subtitle">Choose the plan that best fits your needs and take your clinic's veterinary management to the next level.</p>
+            
+            <div class="plans">
+                <div class="plan">
+                    <h3 data-i18n="subscriptions.plan1.title">Starter Plan</h3>
+                    <div class="plan-features">
+                        <div class="plan-feature">
+                            <i class="fas fa-check"></i>
+                            <p data-i18n="subscriptions.plan1.feature1">Manage basic appointments</p>
+                        </div>
+                        <div class="plan-feature">
+                            <i class="fas fa-check"></i>
+                            <p data-i18n="subscriptions.plan1.feature2">Set your availability</p>
+                        </div>
+                        <div class="plan-feature">
+                            <i class="fas fa-check"></i>
+                            <p data-i18n="subscriptions.plan1.feature3">Easy-to-use interface</p>
+                        </div>
+                        <div class="plan-feature">
+                            <i class="fas fa-check"></i>
+                            <p data-i18n="subscriptions.plan1.feature4">No hidden fees</p>
+                        </div>
+                        <div class="plan-feature">
+                            <i class="fas fa-check"></i>
+                            <p data-i18n="subscriptions.plan1.feature5">Fast and free set up</p>
+                        </div>
+                    </div>
+                    <div class="price">s/ 0.00</div>
+                    <a href="#" class="btn plan-btn" data-i18n="subscriptions.button">Get Started</a>
+                </div>
+                
+                <div class="plan">
+                    <h3 data-i18n="subscriptions.plan2.title">Growth Plan</h3>
+                    <div class="plan-features">
+                        <div class="plan-feature">
+                            <i class="fas fa-check"></i>
+                            <p data-i18n="subscriptions.plan2.feature1">Advance appointment types</p>
+                        </div>
+                        <div class="plan-feature">
+                            <i class="fas fa-check"></i>
+                            <p data-i18n="subscriptions.plan2.feature2">Priority availability control</p>
+                        </div>
+                        <div class="plan-feature">
+                            <i class="fas fa-check"></i>
+                            <p data-i18n="subscriptions.plan2.feature3">Tailored customization</p>
+                        </div>
+                        <div class="plan-feature">
+                            <i class="fas fa-check"></i>
+                            <p data-i18n="subscriptions.plan2.feature4">Flexible terms, no contracts</p>
+                        </div>
+                        <div class="plan-feature">
+                            <i class="fas fa-check"></i>
+                            <p data-i18n="subscriptions.plan2.feature5">Personalized onboarding</p>
+                        </div>
+                    </div>
+                    <div class="price">s/ 150.00</div>
+                    <a href="#" class="btn plan-btn" data-i18n="subscriptions.button">Get Started</a>
+                </div>
+                
+                <div class="plan">
+                    <h3 data-i18n="subscriptions.plan3.title">Premium Plan</h3>
+                    <div class="plan-features">
+                        <div class="plan-feature">
+                            <i class="fas fa-check"></i>
+                            <p data-i18n="subscriptions.plan3.feature1">Unlimited appointment types</p>
+                        </div>
+                        <div class="plan-feature">
+                            <i class="fas fa-check"></i>
+                            <p data-i18n="subscriptions.plan3.feature2">24/7 availability management</p>
+                        </div>
+                        <div class="plan-feature">
+                            <i class="fas fa-check"></i>
+                            <p data-i18n="subscriptions.plan3.feature3">Full system customization</p>
+                        </div>
+                        <div class="plan-feature">
+                            <i class="fas fa-check"></i>
+                            <p data-i18n="subscriptions.plan3.feature4">Cancel anytime, no fees</p>
+                        </div>
+                        <div class="plan-feature">
+                            <i class="fas fa-check"></i>
+                            <p data-i18n="subscriptions.plan3.feature5">Expert set up and support</p>
+                        </div>
+                    </div>
+                    <div class="price">s/ 300.00</div>
+                    <a href="#" class="btn plan-btn" data-i18n="subscriptions.button">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners -->
+    <section class="partners">
+        <div class="container">
+            <h2 class="section-title" data-i18n="partners.title">Our Partners</h2>
+            <div class="partner-logos">
+                <img src="images/partners/canbo.png" alt="CANBO" class="partner-logo">
+                <img src="images/partners/dog-food.png" alt="Dog Food" class="partner-logo">
+                <img src="images/partners/purina.png" alt="PURINA" class="partner-logo">
+                <img src="images/partners/customers.png" alt="CUSTOMERS" class="partner-logo">
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 data-i18n="testimonials.title">Our Customers</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <h3 data-i18n="testimonials.testimonial1.title">Streamlined Workflow</h3>
+                    <p data-i18n="testimonials.testimonial1.text">"With Pawfect Care, I spend less time on paperwork and more time caring for my patients. It's a tool every veterinarian should have."</p>
+                </div>
+                <div class="testimonial-card">
+                    <h3 data-i18n="testimonials.testimonial2.title">Peace of Mind</h3>
+                    <p data-i18n="testimonials.testimonial2.text">"Scheduling my dog's appointment has never been easier. Everything is just a click away, and I feel at ease knowing his health is in good hands."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Veterinarian Section -->
+    <section class="veterinarian">
+        <div class="container">
+            <div class="vet-content">
+                <h2 data-i18n="vet.title">Are you a veterinarian?</h2>
+                <p data-i18n="vet.description">Digitalize your operations and grow faster with FuelTrack's smart order management.</p>
+                <div class="vet-features">
+                    <div class="vet-feature">
+                        <img src="images/clinic-care.png" alt="Clinic Care">
+                        <span data-i18n="vet.feature1">Clinic Care</span>
+                    </div>
+                    <div class="vet-feature">
+                        <img src="images/patient-records.png" alt="Patient Records">
+                        <span data-i18n="vet.feature2">Patient Records</span>
+                    </div>
+                    <div class="vet-feature">
+                        <img src="images/appointments.png" alt="Appointments">
+                        <span data-i18n="vet.feature3">Appointments</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2 data-i18n="faq.title">Frequently asked questions</h2>
+            <div class="faq-item">
+                <h3 data-i18n="faq.question1">Is Pawfect Care only for large clinics?</h3>
+                <p data-i18n="faq.answer1">Not at all. It's designed to fit both large clinics and small practices or independent veterinarians.</p>
+            </div>
+            <div class="faq-item">
+                <h3 data-i18n="faq.question2">What benefits does it have for veterinarians?</h3>
+                <p data-i18n="faq.answer2">Pawfect Care helps veterinarians manage patient records, appointments, and clinic operations more efficiently.</p>
+            </div>
+            <div class="faq-item">
+                <h3 data-i18n="faq.question3">Do I need technical knowledge to use it?</h3>
+                <p data-i18n="faq.answer3">No, our platform is designed to be intuitive and easy to use with no technical knowledge required.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 data-i18n="contact.title">Contact us</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Your message" required></textarea>
+                </div>
+                <button type="submit" class="btn" data-i18n="contact.button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>PETNOVA</h3>
+                    <p data-i18n="footer.description">Simplifying pet care management for veterinarians and pet owners.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 data-i18n="footer.functions">Functions</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" data-i18n="footer.manage">Manage Patient Records</a></li>
+                        <li><a href="#" data-i18n="footer.schedule">Schedule Appointments</a></li>
+                        <li><a href="#" data-i18n="footer.registerPets">Register Pets</a></li>
+                        <li><a href="#" data-i18n="footer.registerClients">Register Clients</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 data-i18n="footer.download">Download</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" data-i18n="footer.android">Android</a></li>
+                        <li><a href="#" data-i18n="footer.windows">Windows</a></li>
+                        <li><a href="#" data-i18n="footer.mac">Mac</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 data-i18n="footer.connect">Connect with us</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" data-i18n="footer.contact">Contact Us</a></li>
+                        <li><a href="#" data-i18n="footer.support">Support</a></li>
+                        <li><a href="#" data-i18n="footer.privacy">Privacy Policy</a></li>
+                        <li><a href="#" data-i18n="footer.terms">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span data-i18n="footer.copyright">2023 PETNOVA. All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/i18n.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
