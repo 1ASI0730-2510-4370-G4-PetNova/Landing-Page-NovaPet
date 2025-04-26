@@ -387,12 +387,14 @@ header {
 .content-wrapper {
     display: flex;
     align-items: center;
-    gap: 60px;
+    gap: 40px;  /* Reduce el espacio entre la imagen y el texto */
     flex-wrap: wrap;
+    justify-content: center;  /* Centra el contenido */
 }
 
 .text-content {
     flex: 1;
+    text-align: left;
 }
 
 .intro-text {
@@ -458,87 +460,16 @@ header {
     text-align: center;
 }
 
-.feature-images {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
 .feature-item {
-    position: relative;
-    width: 30%;
-    text-align: center;
+    width: 100%;
 }
 
-.feature-item .feature-image {
-    width: 100%;
+.feature-image {
+    max-width: 100%;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
     transition: all 0.3s ease;
-}
-
-.feature-item .video-icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 40px;
-    color: #fff;
-    opacity: 0.8;
-    transition: opacity 0.3s ease;
-}
-
-.feature-item:hover .feature-image {
-    transform: scale(1.05);
-}
-
-.feature-item:hover .video-icon {
-    opacity: 1;
-}
-
-/* Responsive Design */
-@media (max-width: 992px) {
-    .content-wrapper {
-        flex-direction: column;
-        gap: 40px;
-    }
-    
-    .image-content {
-        order: -1;
-    }
-    
-    .feature-images {
-        justify-content: center;
-        gap: 20px;
-    }
-    
-    .feature-item {
-        width: 80%;
-    }
-}
-
-@media (max-width: 768px) {
-    .why-choose-us {
-        padding: 80px 0;
-    }
-    
-    .why-choose-us h2 {
-        font-size: 2rem;
-    }
-    
-    .intro-text {
-        font-size: 1rem;
-    }
-    
-    .benefit-item p {
-        font-size: 1rem;
-    }
-    
-    .feature-item {
-        width: 100%;
-    }
 }
 
 
@@ -870,195 +801,317 @@ header {
     }
 }
  
-/* FAQ */
+/* FAQ Section */
 .faq {
     padding: 80px 0;
-    background-color: white;
+    background-color: #1E3A5F; /* Dark blue background */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.faq-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.faq-image {
+    flex: 1;
+    text-align: center;
+}
+
+.faq-img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.faq-text {
+    flex: 2;
+    text-align: left;
+}
+
+.faq-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: white;
 }
 
 .faq-item {
-    margin-bottom: 30px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.faq-question {
-    font-weight: bold;
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    color: #4a90e2;
-}
-
-/* Contact */
-.contact {
-    padding: 80px 0;
-    background-color: #f9f9f9;
-}
-
-.contact-form {
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-.form-group {
     margin-bottom: 20px;
 }
 
-.form-group label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 1rem;
-}
-
-.form-group textarea {
-    height: 150px;
-}
-
-/* Footer */
-footer {
-    background-color: #333;
+.faq-btn {
+    background-color: #4a90e2;
     color: white;
-    padding: 50px 0 20px;
-}
-
-.footer-content {
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 40px;
-    margin-bottom: 40px;
+    align-items: center;
 }
 
-.footer-column {
-    flex: 1;
-    min-width: 200px;
+.faq-btn:hover {
+    background-color: #3a7bc8;
 }
 
-.footer-column h3 {
-    margin-bottom: 20px;
-    font-size: 1.2rem;
+.faq-answer {
+    display: none;
+    margin-top: 10px;
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
-.footer-links li {
-    margin-bottom: 10px;
+.faq-item.active .faq-answer {
+    display: block;
 }
 
-.footer-links a:hover {
-    color: #4a90e2;
-}
-
-.social-links {
-    display: flex;
-    gap: 15px;
-    margin-top: 20px;
-}
-
-.social-links a {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    text-align: center;
-    line-height: 40px;
-    transition: all 0.3s ease;
-}
-
-.social-links a:hover {
-    background-color: #4a90e2;
-    transform: translateY(-3px);
-}
-
-.footer-bottom {
-    text-align: center;
-    padding-top: 20px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+.faq-icon {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 /* Responsive Design */
-@media (max-width: 992px) {
-    .why-us-content {
-        flex-direction: column;
-    }
-    
-    .plans {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .plan {
-        max-width: 400px;
-    }
-}
-
 @media (max-width: 768px) {
-    .nav-links {
-        display: none;
-        position: absolute;
-        top: 70px;
-        left: 0;
-        width: 100%;
-        background-color: white;
+    .faq-content {
         flex-direction: column;
-        align-items: center;
-        padding: 20px 0;
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
     }
-    
-    .nav-links.active {
-        display: flex;
+
+    .faq-image {
+        margin-bottom: 20px;
     }
-    
-    .hamburger {
-        display: block;
-    }
-    
-    .hero {
-        padding: 120px 0 60px;
-    }
-    
-    .hero h1 {
-        font-size: 2rem;
-    }
-    
-    .testimonial-cards {
-        flex-direction: column;
-        align-items: center;
+
+    .faq-btn {
+        font-size: 1rem;
     }
 }
 
-@media (max-width: 576px) {
-    .hero h1 {
-        font-size: 1.8rem;
+
+/* Contact Section */
+.contact {
+    padding: 100px 0;
+    background-color: #f2f7fb; /* Light background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.contact-form {
+    width: 50%;
+    background-color: #1E3A5F; /* Dark blue background */
+    color: white;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.contact-logo {
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+.contact-header h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact-form-fields label {
+    font-size: 1rem;
+    margin-top: 15px;
+    display: block;
+}
+
+.contact-form-fields input,
+.contact-form-fields textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-form-fields button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.contact-form-fields button:hover {
+    background-color: #3a7bc8;
+}
+
+/* Enlarge the contact image */
+.contact-images {
+    width: 50%;  /* Increase the width of the image container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-img {
+    width: 100%;        /* Make the image fill the available space */
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    max-width: 600px;    /* Set max width for the image */
+}
+
+/* Footer Section */
+.footer {
+    background-color: #f5fafd; /* Light background color */
+    color: #333;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-top {
+    background-color: #4a90e2; /* Blue background */
+    padding: 20px 0;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-top p {
+    font-size: 1.2rem;
+    margin: 0;
+    max-width: 700px;
+}
+
+.footer-btn {
+    background-color: #1E3A5F;
+    color: white;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.footer-btn:hover {
+    background-color: #3a7bc8;
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px;
+    flex-wrap: wrap;
+}
+
+.footer-info {
+    flex: 2;
+    text-align: left;
+    padding-right: 20px;
+}
+
+.footer-logo-img {
+    width: 100px; /* Logo size */
+    margin-bottom: 15px;
+}
+
+.footer-text {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.footer-functions,
+.footer-download {
+    margin-bottom: 20px;
+}
+
+.footer-functions h4,
+.footer-download h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.footer-functions ul,
+.footer-download ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1rem;
+}
+
+.footer-functions ul li,
+.footer-download ul li {
+    margin-bottom: 8px;
+}
+
+/* Social Media Section */
+.footer-social {
+    flex: 1;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.social-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
-    
-    .section-title {
-        font-size: 1.5rem;
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
     }
-    
-    .features-icons {
-        gap: 20px;
+
+    .footer-info {
+        text-align: center;
+        padding-right: 0;
     }
-    
-    .feature-icon {
-        width: 80px;
+
+    .footer-functions,
+    .footer-download {
+        text-align: center;
     }
-    
-    .partner-logos {
-        gap: 20px;
-    }
-    
-    .partner-logo {
-        max-width: 80px;
+
+    .footer-social {
+        margin-top: 20px;
     }
 }
