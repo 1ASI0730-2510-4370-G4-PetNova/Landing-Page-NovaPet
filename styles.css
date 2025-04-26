@@ -766,7 +766,110 @@ header {
     }
 }
 
+/* Veterinarian Section */
+.veterinarian {
+    padding: 120px 0;
+    background-color: #f0f9ff; /* Light blue background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.vet-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.vet-text {
+    flex: 1;
+    text-align: left;
+}
+
+.vet-text h2 {
+    font-size: 2.5rem;
+    color: #1E3A5F;
+    margin-bottom: 20px;
+}
+
+.vet-text p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.vet-features {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.vet-feature {
+    text-align: center;
+}
+
+.vet-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.vet-feature span {
+    display: block;
+    font-size: 1rem;
+    color: #1E3A5F;
+}
+
+.vet-image {
+    flex: 1;
+    text-align: center;
+}
+
+.vet-main-image {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.vet-text .btn {
+    background-color: #4a90e2;
+    color: white;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.vet-text .btn:hover {
+    background-color: #3a7bc8;
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .vet-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .vet-text {
+        text-align: center;
+    }
+    
+    .vet-image {
+        margin-top: 40px;
+    }
+
+    .vet-main-image {
+        max-width: 80%;
+    }
+}
+ 
 /* FAQ */
 .faq {
     padding: 80px 0;
