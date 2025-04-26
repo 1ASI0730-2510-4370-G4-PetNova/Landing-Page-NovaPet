@@ -359,7 +359,7 @@ header {
 /* Why Choose Us Section */
 .why-choose-us {
     padding: 100px 0;
-    background-color: #1E3A5F; /* Color de fondo solicitado */
+    background-color: #1E3A5F; /* Color de fondo */
     color: white;
     position: relative;
     overflow: hidden;
@@ -378,12 +378,6 @@ header {
     align-items: center;
 }
 
-.section-icon {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 20px;
-}
-
 .why-choose-us h2 {
     font-size: 2.5rem;
     margin-bottom: 15px;
@@ -394,6 +388,7 @@ header {
     display: flex;
     align-items: center;
     gap: 60px;
+    flex-wrap: wrap;
 }
 
 .text-content {
@@ -463,11 +458,44 @@ header {
     text-align: center;
 }
 
-.feature-image {
-    max-width: 100%;
+.feature-images {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    position: relative;
+    width: 30%;
+    text-align: center;
+}
+
+.feature-item .feature-image {
+    width: 100%;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.feature-item .video-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: #fff;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.feature-item:hover .feature-image {
+    transform: scale(1.05);
+}
+
+.feature-item:hover .video-icon {
+    opacity: 1;
 }
 
 /* Responsive Design */
@@ -479,6 +507,15 @@ header {
     
     .image-content {
         order: -1;
+    }
+    
+    .feature-images {
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .feature-item {
+        width: 80%;
     }
 }
 
@@ -499,11 +536,12 @@ header {
         font-size: 1rem;
     }
     
-    .section-icon {
-        width: 50px;
-        height: 50px;
+    .feature-item {
+        width: 100%;
     }
 }
+
+
 
 /* Subscriptions */
 .subscriptions {
