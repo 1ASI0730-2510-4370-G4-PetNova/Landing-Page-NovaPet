@@ -657,62 +657,115 @@ header {
     }
 }
 
-/* Partners */
+/* Partners Section */
 .partners {
     padding: 60px 0;
-    background-color: white;
+    background-color: #fff; /* White background */
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
 }
 
 .partner-logos {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 40px;
+    gap: 30px;
     flex-wrap: wrap;
 }
 
 .partner-logo {
-    max-width: 120px;
+    max-width: 200px;
+    max-height: 100px;
     filter: grayscale(100%);
     opacity: 0.7;
     transition: all 0.3s ease;
 }
 
 .partner-logo:hover {
-    filter: grayscale(0);
+    filter: grayscale(0%);
     opacity: 1;
 }
 
-/* Testimonials */
-.testimonials {
+
+/* Customers Section */
+.customers {
     padding: 80px 0;
-    background-color: #f9f9f9;
+    background-color: #1E3A5F; /* Dark blue background */
+    color: white;
+    text-align: center;
 }
 
-.testimonial-cards {
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.customer-cards {
     display: flex;
+    justify-content: space-between;
     gap: 30px;
-    justify-content: center;
     flex-wrap: wrap;
 }
 
-.testimonial {
-    background-color: white;
-    padding: 30px;
+.customer-card {
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-    width: 100%;
-    max-width: 350px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
-.testimonial p {
-    font-style: italic;
+.customer-card:hover {
+    transform: translateY(-5px);
+}
+
+.customer-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
     margin-bottom: 20px;
 }
 
-.testimonial-author {
-    font-weight: bold;
+.customer-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
 }
+
+.customer-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+    opacity: 0.9;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .customer-cards {
+        justify-content: center;
+    }
+    
+    .customer-card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .customer-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
 
 /* FAQ */
 .faq {
