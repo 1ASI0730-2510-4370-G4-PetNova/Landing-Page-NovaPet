@@ -1,0 +1,66 @@
+{
+  "home": {
+    "title": "Hogar",
+    "description": "Gestiona el cuidado de tus mascotas de forma sencilla y eficiente.",
+    "subTitle": "Lleva un control de los registros médicos, vacunas y citas veterinarias en un solo lugar.",
+    "petHealth": "Salud Animal",
+    "vaccines": "Vacunas",
+    "reminders": "Recordatorios",
+    "getStarted": "Comienza"
+  },
+  "whyChooseUs": {
+    "title": "¿Por qué elegirnos?",
+    "description": "En Pawfect Care entendemos que el bienestar de tus pacientes y la eficiencia de tu trabajo son las principales prioridades. Es por eso que ofrecemos una plataforma confiable e intuitiva diseñada para simplificar todos los aspectos de la gestión veterinaria.",
+    "points": {
+      "1": "Gestiona usuarios, clientes, productos, servicios y registros clínicos con facilidad.",
+      "2": "Accede fácilmente a los registros médicos para mejorar el cuidado y seguimiento de las mascotas.",
+      "3": "Una interfaz intuitiva diseñada para veterinarios y dueños de mascotas, sin necesidad de conocimientos técnicos avanzados."
+    }
+  },
+  "subscriptions": {
+    "title": "Planes de suscripción",
+    "description": "Elige el plan que mejor se adapte a tus necesidades y lleva la gestión veterinaria de tu clínica al siguiente nivel.",
+    "plans": {
+      "starter": {
+        "name": "Plan Inicial",
+        "price": "$ 00.00",
+        "features": [
+          "Gestionar citas básicas",
+          "Configura tu disponibilidad",
+          "Interfaz fácil de usar",
+          "Sin tarifas ocultas",
+          "Configuración rápida y gratuita"
+        ]
+      },
+      "growth": {
+        "name": "Plan de Crecimiento",
+        "price": "$ 150.00",
+        "features": [
+          "Tipos avanzados de citas",
+          "Control de prioridad de disponibilidad",
+          "Personalización adaptada",
+          "Términos flexibles, sin contratos",
+          "Onboarding personalizado"
+        ]
+      },
+      "premium": {
+        "name": "Plan Premium",
+        "price": "$ 300.00",
+        "features": [
+          "Tipos ilimitados de citas",
+          "Gestión de disponibilidad 24/7",
+          "Personalización total del sistema",
+          "Cancelación en cualquier momento, sin cargos",
+          "Soporte y configuración experta"
+        ]
+      }
+    }
+  },
+  "contact": {
+    "title": "Contáctanos con Petnova",
+    "name": "Nombre",
+    "phoneNumber": "Número de teléfono",
+    "message": "Tu mensaje",
+    "sendMessage": "Enviar mensaje"
+  }
+}

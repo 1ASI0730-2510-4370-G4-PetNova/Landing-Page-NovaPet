@@ -1,0 +1,66 @@
+{
+  "home": {
+    "title": "Home",
+    "description": "Manage your pets' care simply and efficiently.",
+    "subTitle": "Keep track of medical records, vaccinations, and vet appointments in one place.",
+    "petHealth": "Pet Health",
+    "vaccines": "Vaccines",
+    "reminders": "Reminders",
+    "getStarted": "Get Started"
+  },
+  "whyChooseUs": {
+    "title": "Why choose us?",
+    "description": "At Pawfect Care, we understand that your patients' well-being and the efficiency of your work are top priorities. That's why we offer a reliable, intuitive platform designed to simplify every aspect of veterinary management.",
+    "points": {
+      "1": "Manage users, clients, products, services, and clinical records with ease.",
+      "2": "Easily access medical records to improve pet care and follow-up.",
+      "3": "An intuitive interface designed for veterinarians and pet owners, with no advanced technical skills required."
+    }
+  },
+  "subscriptions": {
+    "title": "Subscriptions",
+    "description": "Choose the plan that best fits your needs and take your clinic's veterinary management to the next level.",
+    "plans": {
+      "starter": {
+        "name": "Starter Plan",
+        "price": "$ 00.00",
+        "features": [
+          "Manage basic appointments",
+          "Set your availability",
+          "Easy-to-use interface",
+          "No hidden fees",
+          "Fast and free set up"
+        ]
+      },
+      "growth": {
+        "name": "Growth Plan",
+        "price": "$ 150.00",
+        "features": [
+          "Advanced appointment types",
+          "Priority availability control",
+          "Tailored customization",
+          "Flexible terms, no contracts",
+          "Personalized onboarding"
+        ]
+      },
+      "premium": {
+        "name": "Premium Plan",
+        "price": "$ 300.00",
+        "features": [
+          "Unlimited appointment types",
+          "24/7 availability management",
+          "Full system customization",
+          "Cancel anytime, no fees",
+          "Expert set up and support"
+        ]
+      }
+    }
+  },
+  "contact": {
+    "title": "Get in touch with Petnova",
+    "name": "Name",
+    "phoneNumber": "Phone number",
+    "message": "Your message",
+    "sendMessage": "Send Message"
+  }
+}
