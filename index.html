@@ -18,7 +18,7 @@
     </div>
 
     <!-- Header -->
-<header>
+    <header>
       <div class="container">
         <nav class="navbar">
           <div class="logo">
@@ -27,12 +27,10 @@
           <ul class="nav-links">
             <li><a href="#" data-i18n="nav.home">Home</a></li>
             <li><a href="#why-us" data-i18n="nav.why">Why choose us?</a></li>
-            <li><a href="#features" data-i18n="nav.features">Features</a></li>
+            <li><a href="#subscriptions" data-i18n="nav.subscriptions">Subscriptions</a></li>
             <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
             <li><a href="#contact" data-i18n="nav.contact">Contact us</a></li>
-            <li>
-              <a href="#" class="btn-outline" data-i18n="nav.signin">Sign in</a>
-            </li>
+            <li><a href="#" class="btn-outline" data-i18n="nav.signin">Sign in</a></li>
             <li class="signup-container">
               <a href="#" class="btn" data-i18n="nav.signup">Sign up</a>
             </li>
@@ -47,90 +45,53 @@
       <div class="container">
         <div class="hero-content">
           <div class="hero-text">
-            <h1>Manage your pets'<br />care simply and<br />efficiently.</h1>
-            <p>
-              Keep track of medical records, vaccinations, and vet<br />appointments
-              in one place.
+            <h1 data-i18n="hero.title">Manage your pets' care simply and efficiently.</h1>
+            <p data-i18n="hero.subtitle">
+              Keep track of medical records, vaccinations, and vet appointments in one place.
             </p>
-            <div class="hero-features">
-              <div class="feature">
-                <img src="./img/pata 1.png" alt="Pet Health" />
-                <span>Pet Health</span>
-              </div>
-              <div class="feature">
-                <img src="./img/aguja-de-jeringa 1.png" alt="Vaccines" />
-                <span>Vaccines</span>
-              </div>
-              <div class="feature">
-                <img src="./img/recordatorio 1.png" alt="Reminders" />
-                <span>Reminders</span>
-              </div>
-            </div>
-            <a href="#" class="btn">Get Started</a>
+            <a href="#" class="btn" data-i18n="hero.button">Get Started</a>
           </div>
           <div class="hero-image">
-            <img
-              src="./img/vet-img1.png"
-              alt="Veterinarian with dog"
-              class="hero-main-image"
-            />
+            <img src="./img/vet-img1.png" alt="Veterinarian with dog" class="hero-main-image" />
           </div>
         </div>
       </div>
     </section>
+
     <!-- Why Choose Us Section -->
     <section class="why-choose-us" id="why-us">
       <div class="container">
         <div class="section-header">
-          <h2>Why Choose Us?</h2>
+          <h2 data-i18n="why.title">Why Choose Us?</h2>
         </div>
         <div class="content-wrapper">
           <div class="image-content">
             <div class="feature-item">
-              <img
-                src="./img/opera_gR3U0lUoAT.png"
-                alt="Dog Image"
-                class="feature-image"
-              />
+              <img src="./img/opera_gR3U0lUoAT.png" alt="Dog Image" class="feature-image" />
             </div>
           </div>
           <div class="text-content">
-            <p class="intro-text">
-              At PetNova, we understand that your patients' well-being and the
-              efficiency of your work are top priorities. That's why we offer a
-              reliable, intuitive platform designed to simplify every aspect of
-              veterinary management.
+            <p class="intro-text" data-i18n="why.description">
+              At PetNova, we understand that your patients' well-being and the efficiency of your work are top priorities.
             </p>
             <div class="benefits-grid">
               <div class="benefit-item">
                 <div class="checkbox"></div>
-                <p>
-                  Manage users, clients, products, services, and clinical
-                  records with ease.
-                </p>
+                <p data-i18n="why.benefit1">Manage users, clients, products, services, and clinical records with ease.</p>
               </div>
               <div class="benefit-item checked">
                 <div class="checkbox checked">
                   <i class="fas fa-check"></i>
                 </div>
-                <p>
-                  Easily access medical records to improve pet care and
-                  follow-up.
-                </p>
+                <p data-i18n="why.benefit2">Easily access medical records to improve pet care and follow-up.</p>
               </div>
               <div class="benefit-item">
                 <div class="checkbox"></div>
-                <p>
-                  An intuitive interface designed for veterinarians and pet
-                  owners, with no advanced technical skills required.
-                </p>
+                <p data-i18n="why.benefit3">An intuitive interface designed for veterinarians and pet owners, with no advanced technical skills required.</p>
               </div>
               <div class="benefit-item">
                 <div class="checkbox"></div>
-                <p>
-                  Optimize daily tasks and focus on what really matters: pet
-                  welfare.
-                </p>
+                <p data-i18n="why.benefit4">Optimize daily tasks and focus on what really matters: pet welfare.</p>
               </div>
             </div>
           </div>
@@ -141,13 +102,12 @@
     <!-- Subscriptions Section -->
     <section class="subscriptions" id="subscriptions">
       <div class="container">
-        <h2 class="section-title">Subscriptions</h2>
-        <p class="section-subtitle">
-          Choose the plan that best fits your needs and take your clinic's
-          veterinary management to the next level.
+        <h1 class="subscriptions-text" data-i18n="subscriptions.text">Subscriptions</h1>
+        <p class="section-subtitle" data-i18n="subscriptions.subtitle">
+          Choose the plan that best fits your needs and take your clinic's veterinary management to the next level.
         </p>
 
-        <div class="plans">
+              <div class="plans">
           <div class="plan">
             <div class="plan-image">
               <img
@@ -156,31 +116,31 @@
                 class="plan-img"
               />
             </div>
-            <h3>Starter Plan</h3>
+            <h3 data-i18n="plan.starter">Starter Plan</h3>
             <div class="plan-features">
               <div class="plan-feature">
                 <i class="fas fa-check"></i>
-                <p>Manage basic appointments</p>
+                <p data-i18n="feature.basic">Manage basic appointments</p>
               </div>
               <div class="plan-feature">
                 <i class="fas fa-check"></i>
-                <p>Set your availability</p>
+                <p data-i18n="feature.availability">Set your availability</p>
               </div>
               <div class="plan-feature">
                 <i class="fas fa-check"></i>
-                <p>Easy-to-use interface</p>
+                <p data-i18n="feature.interface">Easy-to-use interface</p>
               </div>
               <div class="plan-feature">
                 <i class="fas fa-check"></i>
-                <p>No hidden fees</p>
+                <p data-i18n="feature.nofees">No hidden fees</p>
               </div>
               <div class="plan-feature">
                 <i class="fas fa-check"></i>
-                <p>Fast and free set up</p>
+                <p data-i18n="feature.setup">Fast and free set up</p>
               </div>
             </div>
             <div class="price">$ 0.00</div>
-            <a href="#" class="btn plan-btn">Get Started</a>
+            <a href="#" class="btn plan-btn" data-i18n="hero.button">Get Started</a>
           </div>
 
           <div class="plan">
@@ -191,31 +151,31 @@
                 class="plan-img"
               />
             </div>
-            <h3>Growth Plan</h3>
+            <h3 data-i18n="plan.growth">Growth Plan</h3>
             <div class="plan-features">
               <div class="plan-feature">
                 <i class="fas fa-check"></i>
-                <p>Advance appointment types</p>
+                <p data-i18n="feature.advance">Advance appointment types</p>
               </div>
               <div class="plan-feature">
                 <i class="fas fa-check"></i>
-                <p>Priority availability control</p>
+                <p data-i18n="feature.priority">Priority availability control</p>
               </div>
               <div class="plan-feature">
                 <i class="fas fa-check"></i>
-                <p>Tailored customization</p>
+                <p data-i18n="feature.custom">Tailored customization</p>
               </div>
               <div class="plan-feature">
                 <i class="fas fa-check"></i>
-                <p>Flexible terms, no contracts</p>
+                <p data-i18n="feature.flexible">Flexible terms, no contracts</p>
               </div>
               <div class="plan-feature">
                 <i class="fas fa-check"></i>
-                <p>Personalized onboarding</p>
+                <p data-i18n="feature.onboarding">Personalized onboarding</p>
               </div>
             </div>
             <div class="price">$ 150.00</div>
-            <a href="#" class="btn plan-btn">Get Started</a>
+            <a href="#" class="btn plan-btn" data-i18n="hero.button">Get Started</a>
           </div>
 
           <div class="plan">
@@ -226,31 +186,31 @@
                 class="plan-img"
               />
             </div>
-            <h3>Premium Plan</h3>
+            <h3 data-i18n="plan.premium">Premium Plan</h3>
             <div class="plan-features">
               <div class="plan-feature">
                 <i class="fas fa-check"></i>
-                <p>Unlimited appointment types</p>
+                <p data-i18n="feature.unlimited">Unlimited appointment types</p>
               </div>
               <div class="plan-feature">
                 <i class="fas fa-check"></i>
-                <p>24/7 availability management</p>
+                <p data-i18n="feature.247">24/7 availability management</p>
               </div>
               <div class="plan-feature">
                 <i class="fas fa-check"></i>
-                <p>Full system customization</p>
+                <p data-i18n="feature.fullcustom">Full system customization</p>
               </div>
               <div class="plan-feature">
                 <i class="fas fa-check"></i>
-                <p>Cancel anytime, no fees</p>
+                <p data-i18n="feature.cancel">Cancel anytime, no fees</p>
               </div>
               <div class="plan-feature">
                 <i class="fas fa-check"></i>
-                <p>Expert set up and support</p>
+                <p data-i18n="feature.expert">Expert set up and support</p>
               </div>
             </div>
             <div class="price">$ 300.00</div>
-            <a href="#" class="btn plan-btn">Get Started</a>
+            <a href="#" class="btn plan-btn" data-i18n="hero.button">Get Started</a>
           </div>
         </div>
       </div>
@@ -259,7 +219,7 @@
     <!-- Partners Section -->
     <section class="partners" id="partners">
       <div class="container">
-        <h2 class="section-title">Our Partners</h2>
+        <h2 class="section-title" data-i18n="partners.title">Our Partners</h2>
         <div class="partner-logos">
           <img src="./img/canbo.png" alt="CANBO" class="partner-logo" />
           <img src="./img/eukanuba.png" alt="Eukanuba" class="partner-logo" />
@@ -276,7 +236,7 @@
     <!-- Customers Section -->
     <section class="customers" id="customers">
       <div class="container">
-        <h2 class="section-title">Customers</h2>
+        <h2 class="section-title" data-i18n="customers.title">Customers</h2>
         <div class="customer-cards">
           <div class="customer-card">
             <img
@@ -284,8 +244,8 @@
               alt="Streamlined Workflow"
               class="customer-image"
             />
-            <h3>Streamlined Workflow</h3>
-            <p>
+            <h3 data-i18n="testimonial1.title">Streamlined Workflow</h3>
+            <p data-i18n="testimonial1.text">
               With PetNova, I spend less time on paperwork and more time caring
               for my patients. It's a tool every veterinarian should have.
             </p>
@@ -296,8 +256,8 @@
               alt="Peace of Mind"
               class="customer-image"
             />
-            <h3>Peace of Mind</h3>
-            <p>
+            <h3 data-i18n="testimonial2.title">Peace of Mind</h3>
+            <p data-i18n="testimonial2.text">
               Scheduling my dog's appointment has never been easier. Everything
               is just a click away, and I feel at ease knowing his health is in
               good hands.
@@ -309,8 +269,8 @@
               alt="Effortless Management"
               class="customer-image"
             />
-            <h3>Effortless Management</h3>
-            <p>
+            <h3 data-i18n="testimonial3.title">Effortless Management</h3>
+            <p data-i18n="testimonial3.text">
               Since using PetNova, our clinic runs like clockwork. Appointments
               schedule themselves, and our patients are happier than ever.
             </p>
@@ -324,10 +284,9 @@
       <div class="container">
         <div class="vet-content">
           <div class="vet-text">
-            <h2>Are you a veterinarian?</h2>
-            <p>
-              Digitalize your operations and grow faster with FuelTrack's smart
-              order management.
+            <h2 data-i18n="vet.title">Are you a veterinarian?</h2>
+            <p data-i18n="vet.description">
+              Digitalize your operations and grow faster with PetNova's smart management.
             </p>
             <div class="vet-features">
               <div class="vet-feature">
@@ -336,7 +295,7 @@
                   alt="Clinic Care"
                   class="vet-icon"
                 />
-                <span>Clinic Care</span>
+                <span data-i18n="vet.feature1">Clinic Care</span>
               </div>
               <div class="vet-feature">
                 <img
@@ -344,7 +303,7 @@
                   alt="Patient Records"
                   class="vet-icon"
                 />
-                <span>Patient Records</span>
+                <span data-i18n="vet.feature2">Patient Records</span>
               </div>
               <div class="vet-feature">
                 <img
@@ -352,10 +311,10 @@
                   alt="Appointments"
                   class="vet-icon"
                 />
-                <span>Appointments</span>
+                <span data-i18n="vet.feature3">Appointments</span>
               </div>
             </div>
-            <a href="#" class="btn">Manage Your Clinic</a>
+            <a href="#" class="btn" data-i18n="vet.button">Manage Your Clinic</a>
           </div>
           <div class="vet-image">
             <img
@@ -380,16 +339,14 @@
             />
           </div>
           <div class="faq-text">
-            <h2>Frequently asked questions</h2>
+            <h2 data-i18n="faq.title">Frequently asked questions</h2>
             <div class="faq-item">
               <button class="faq-btn">
-                <span class="faq-question"
-                  >Is PetNova only for large clinics?</span
-                >
+                <span class="faq-question" data-i18n="faq.question1">Is PetNova only for large clinics?</span>
                 <span class="faq-icon">+</span>
               </button>
               <div class="faq-answer">
-                <p>
+                <p data-i18n="faq.answer1">
                   Not at all! It's designed to fit both large clinics and small
                   practices or independent veterinarians.
                 </p>
@@ -397,13 +354,11 @@
             </div>
             <div class="faq-item">
               <button class="faq-btn">
-                <span class="faq-question"
-                  >What benefits does it have for veterinarians?</span
-                >
+                <span class="faq-question" data-i18n="faq.question2">What benefits does it have for veterinarians?</span>
                 <span class="faq-icon">+</span>
               </button>
               <div class="faq-answer">
-                <p>
+                <p data-i18n="faq.answer2">
                   PetNova helps veterinarians manage patient records,
                   appointments, and clinic operations more efficiently.
                 </p>
@@ -411,13 +366,11 @@
             </div>
             <div class="faq-item">
               <button class="faq-btn">
-                <span class="faq-question"
-                  >How does PetNova Care simplify daily clinic operations?</span
-                >
+                <span class="faq-question" data-i18n="faq.question3">How does PetNova Care simplify daily clinic operations?</span>
                 <span class="faq-icon">+</span>
               </button>
               <div class="faq-answer">
-                <p>
+                <p data-i18n="faq.answer3">
                   PetNova simplifies clinic operations by automating appointment
                   scheduling, reminders, and patient record management.
                 </p>
@@ -425,13 +378,11 @@
             </div>
             <div class="faq-item">
               <button class="faq-btn">
-                <span class="faq-question"
-                  >Do I need technical knowledge to use it?</span
-                >
+                <span class="faq-question" data-i18n="faq.question4">Do I need technical knowledge to use it?</span>
                 <span class="faq-icon">+</span>
               </button>
               <div class="faq-answer">
-                <p>
+                <p data-i18n="faq.answer4">
                   No, PetNova is designed to be intuitive and easy to use with
                   no technical knowledge required.
                 </p>
@@ -454,16 +405,16 @@
                 alt="Petnova Logo"
                 class="contact-logo"
               />
-              <h2>Get in touch with Petnova</h2>
+              <h2 data-i18n="contact.title">Get in touch with Petnova</h2>
             </div>
             <form action="#" method="post" class="contact-form-fields">
-              <label for="name">Name</label>
+              <label for="name" data-i18n="contact.name">Name</label>
               <input type="text" id="name" name="name" required />
 
-              <label for="phone">Phone number</label>
+              <label for="phone" data-i18n="contact.phone">Phone number</label>
               <input type="tel" id="phone" name="phone" required />
 
-              <label for="message">Your message</label>
+              <label for="message" data-i18n="contact.message">Your message</label>
               <textarea
                 id="message"
                 name="message"
@@ -471,7 +422,7 @@
                 required
               ></textarea>
 
-              <button type="submit" class="send-btn">Send Message</button>
+              <button type="submit" class="send-btn" data-i18n="contact.button">Send Message</button>
             </form>
           </div>
 
@@ -492,11 +443,11 @@
       <div class="container">
         <!-- Top Section (Need more information) -->
         <div class="footer-top">
-          <p>
+          <p data-i18n="footer.toptext">
             Need more information? <br />
             Write your concern to us and our specialist will get back to you.
           </p>
-          <a href="#" class="btn footer-btn">Click here</a>
+          <a href="#" class="btn footer-btn" data-i18n="footer.button">Click here</a>
         </div>
 
         <!-- Bottom Footer Content -->
@@ -507,7 +458,7 @@
               alt="Petnova Logo"
               class="footer-logo-img"
             />
-            <p class="footer-text">
+            <p class="footer-text" data-i18n="footer.description">
               We care for those you love the most, with technology made with
               love. <br />📍 Lima, Peru
             </p>
@@ -515,28 +466,28 @@
 
           <div class="footer-links">
             <div class="footer-functions">
-              <h4>Functions</h4>
+              <h4 data-i18n="footer.functions">Functions</h4>
               <ul>
-                <li>Manage</li>
-                <li>Schedule Appointments</li>
-                <li>Register Pets</li>
-                <li>Register Clients</li>
+                <li data-i18n="footer.manage">Manage Patient Records</li>
+                <li data-i18n="footer.schedule">Schedule Appointments</li>
+                <li data-i18n="footer.registerPets">Register Pets</li>
+                <li data-i18n="footer.registerClients">Register Clients</li>
               </ul>
             </div>
 
             <div class="footer-download">
-              <h4>Download</h4>
+              <h4 data-i18n="footer.download">Download</h4>
               <ul>
-                <li>iOS</li>
-                <li>Android</li>
-                <li>Windows</li>
-                <li>Mac</li>
+                <li data-i18n="footer.ios">iOS</li>
+                <li data-i18n="footer.android">Android</li>
+                <li data-i18n="footer.windows">Windows</li>
+                <li data-i18n="footer.mac">Mac</li>
               </ul>
             </div>
           </div>
 
           <div class="footer-social">
-            <h4>Connect with us</h4>
+            <h4 data-i18n="footer.connect">Connect with us</h4>
             <div class="social-icons">
               <a href="#" class="social-icon">
                 <img
@@ -564,6 +515,9 @@
               </a>
             </div>
           </div>
+        </div>
+        <div class="footer-copyright">
+          <p data-i18n="footer.copyright">2025 PETNOVA. All rights reserved.</p>
         </div>
       </div>
     </footer>

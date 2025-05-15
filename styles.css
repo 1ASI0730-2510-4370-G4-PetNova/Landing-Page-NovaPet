@@ -476,11 +476,16 @@ header {
   background-color: #f9f9f9;
   text-align: center;
 }
+.subscriptions-text p {
+  text-align: center;
+  font-size: 100rem; /* Aumento del tamaño de la fuente */
+  color: #030303; /* Color más oscuro para el párrafo */
+}
 
 .section-title {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color: #333;
+  color: #000000;
 }
 
 .section-subtitle {
@@ -590,11 +595,16 @@ header {
   background-color: #fff; /* White background */
   text-align: center;
 }
+.partners-text p {
+  text-align: center;
+  font-size: 100rem; /* Aumento del tamaño de la fuente */
+  color: #030303; /* Color más oscuro para el párrafo */
+}
 
 .section-title {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color: #333;
+  color: #bd6868;
 }
 
 .partner-logos {
