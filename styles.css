@@ -702,6 +702,48 @@ header {
   }
 }
 
+/* Videos Section */
+.videos {
+  padding: 50px 0;
+  background-color: #f0f9ff;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.video-item {
+  text-align: center;
+}
+
+section.videos .section-title {
+  color: #000000;
+}
+
+.video-item h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.video-item p {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.video-player {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  aspect-ratio: 16 / 9; /* Mantiene la proporción 16:9 típica de videos */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 /* Veterinarian Section */
 .veterinarian {
   padding: 120px 0;
